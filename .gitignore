@@ -1,0 +1,3 @@
+.env/*
+.vim/coc-settings.json
+db.sqlite3
