@@ -1,14 +1,10 @@
 """Platzigram URLS"""
 
+from platzigram import views
 
 from django.urls import path
-from django.http import HttpResponse
 
-def hello(request):
-    """"Return Hello World"""
-    return HttpResponse("Hello World")
-
-
-
-
-urlpatterns = [path('hello/',hello)]
+urlpatterns = [
+        path("time/", views.time),
+        path("order-numbers/", views.order_numbers)
+        ]
